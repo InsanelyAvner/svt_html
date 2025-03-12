@@ -134,7 +134,7 @@ body{
     padding-left: 15px;
 }
 
-.image-anime{
+/* .image-anime{
 	position: relative;
 	overflow: hidden;
 }
@@ -173,7 +173,7 @@ body{
     object-fit: cover;
     -webkit-transform-origin: left;
     transform-origin: left;
-}
+} */
 
 .row{
     margin-right: -15px;
@@ -5998,4 +5998,967 @@ header.main-header .header-sticky.active{
 	.error-page-content-heading h2{
 		font-size: 28px;
 	}
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+* Temple Website Enhancement Styles
+* ---------------------------------------------------------------------------------------- */
+
+/************************************/
+/***     Visiting Info Section    ***/
+/************************************/
+
+.visiting-info {
+    padding: 50px 0;
+    background-color: var(--secondary-color);
+    border-radius: 0 0 80px 0;
+}
+
+.info-box {
+    background-color: var(--white-color);
+    border-radius: 0 0 50px 0;
+    padding: 30px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+}
+
+.info-box .icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-box:hover .icon-box {
+    background-color: var(--accent-color);
+}
+
+.info-box .icon-box i {
+    font-size: 32px;
+    color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.info-box:hover .icon-box i {
+    color: var(--white-color);
+}
+
+.info-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.info-box p {
+    margin-bottom: 8px;
+}
+
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+
+/************************************/
+/***     Temple Statistics        ***/
+/************************************/
+
+.temple-statistics {
+    padding: 70px 0;
+    background-color: var(--white-color);
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 30px 0;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.stat-item:hover {
+    background-color: var(--secondary-color);
+}
+
+.stat-item .icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.stat-item:hover .icon-box {
+    background-color: var(--white-color);
+}
+
+.stat-item .icon-box i {
+    font-size: 28px;
+    color: var(--accent-color);
+}
+
+.stat-item h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.stat-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/************************************/
+/***     Prayer Services          ***/
+/************************************/
+
+.prayer-services {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.service-pricing-table {
+    background-color: var(--white-color);
+    border-radius: 0 0 50px 0;
+    padding: 30px;
+    height: 100%;
+}
+
+.service-pricing-table h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.service-pricing-table .table {
+    margin-bottom: 25px;
+}
+
+.service-pricing-table .table thead th {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-weight: 600;
+    border: none;
+    padding: 12px 15px;
+}
+
+.service-pricing-table .table thead th:first-child {
+    border-radius: 0 0 0 0;
+}
+
+.service-pricing-table .table thead th:last-child {
+    border-radius: 0 0 20px 0;
+}
+
+.service-pricing-table .table tbody td {
+    padding: 12px 15px;
+    border-color: var(--dark-divider-color);
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.service-pricing-table .table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.service-pricing-table p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/************************************/
+/***     Festival Calendar        ***/
+/************************************/
+
+.festival-calendar {
+    padding: 80px 0;
+    background-color: var(--white-color);
+}
+
+.calendar-wrapper {
+    background-color: var(--secondary-color);
+    border-radius: 0 0 50px 0;
+    padding: 30px;
+}
+
+.calendar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.calendar-nav h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.calendar-nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.calendar-nav-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.calendar-nav-btn:hover i {
+    color: var(--white-color);
+}
+
+.calendar-nav-btn i {
+    font-size: 16px;
+    color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.calendar-container {
+    background-color: var(--white-color);
+    border-radius: 0 0 30px 0;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 300px;
+}
+
+.calendar-legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.legend-item:last-child {
+    margin-right: 0;
+}
+
+.color-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.major-festival {
+    background-color: var(--accent-color);
+}
+
+.minor-festival {
+    background-color: #FFB547;
+}
+
+.special-event {
+    background-color: #4CAF50;
+}
+
+.upcoming-festivals {
+    border-top: 1px solid var(--dark-divider-color);
+    padding-top: 30px;
+}
+
+.upcoming-festivals h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.festival-item {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--dark-divider-color);
+}
+
+.festival-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.festival-date {
+    background-color: var(--secondary-color);
+    width: 80px;
+    height: 80px;
+    border-radius: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.festival-item.major .festival-date {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.festival-details {
+    flex: 1;
+}
+
+.festival-details h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.festival-details p {
+    margin-bottom: 0;
+}
+
+/************************************/
+/***     Temple Location          ***/
+/************************************/
+
+.temple-location {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.location-details {
+    background-color: var(--white-color);
+    border-radius: 0 0 50px 0;
+    padding: 30px;
+}
+
+.location-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.location-item:last-child {
+    margin-bottom: 0;
+}
+
+.location-item .icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.location-item:hover .icon-box {
+    background-color: var(--accent-color);
+}
+
+.location-item .icon-box i {
+    font-size: 20px;
+    color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.location-item:hover .icon-box i {
+    color: var(--white-color);
+}
+
+.location-content {
+    flex: 1;
+}
+
+.location-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.location-content p {
+    margin-bottom: 5px;
+}
+
+.location-content p:last-child {
+    margin-bottom: 0;
+}
+
+.location-content p strong {
+    font-weight: 600;
+}
+
+.location-btn {
+    margin-top: 30px;
+}
+
+.map-container {
+    border-radius: 0 0 80px 0;
+    overflow: hidden;
+    height: 100%;
+    min-height: 450px;
+}
+
+/************************************/
+/***     Give Section             ***/
+/************************************/
+
+.give-section {
+    background: url('../images/donate-now-bg.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.give-box {
+    background-color: var(--white-color);
+    border-radius: 0 0 50px 0;
+    padding: 40px;
+}
+
+.give-form .donate-value-box {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.give-form .donate-value {
+    width: calc(33.33% - 6.66px);
+}
+
+.give-form .form-control {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--dark-divider-color);
+    border-radius: 0 0 20px 0;
+    font-weight: 500;
+    box-shadow: none;
+    outline: none;
+    padding: 20px;
+}
+
+.give-form .form-control::placeholder {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.give-form .donate-value input {
+    position: absolute;
+    left: -9999px;
+}
+
+.give-form .donate-value label {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    font-weight: 500;
+    line-height: 1.2em;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 0 0 20px 0;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.give-form .donate-value input[type="radio"]:focus+label,
+.give-form .donate-value input[type="radio"]:checked+label {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.give-form .form-group-btn {
+    text-align: center;
+}
+
+.give-benefits {
+    background-color: var(--secondary-color);
+    border-radius: 0 0 50px 0;
+    padding: 40px;
+    height: 100%;
+}
+
+.give-benefits h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefit-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.benefit-list li:last-child {
+    margin-bottom: 0;
+}
+
+.benefit-list li i {
+    font-size: 20px;
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+/************************************/
+/***     Livestream Section       ***/
+/************************************/
+
+.livestream-section {
+    padding: 80px 0;
+    background-color: var(--white-color);
+}
+
+.livestream-container {
+    background-color: var(--secondary-color);
+    border-radius: 0 0 50px 0;
+    padding: 30px;
+}
+
+.video-wrapper {
+    border-radius: 0 0 30px 0;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.livestream-schedule {
+    background-color: var(--white-color);
+    border-radius: 0 0 30px 0;
+    padding: 30px;
+}
+
+.livestream-schedule h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.livestream-schedule ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.livestream-schedule ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--dark-divider-color);
+}
+
+.livestream-schedule ul li:last-child {
+    border-bottom: none;
+}
+
+.schedule-time {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.livestream-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    border-top: 1px solid var(--dark-divider-color);
+    padding-top: 20px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 0 0 15px 0;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.social-link i {
+    margin-right: 8px;
+}
+
+/************************************/
+/***     Volunteer Section        ***/
+/************************************/
+
+.volunteer-section {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.volunteer-opportunity {
+    background-color: var(--white-color);
+    border-radius: 0 0 50px 0;
+    padding: 30px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.volunteer-opportunity:hover {
+    transform: translateY(-10px);
+}
+
+.volunteer-opportunity .icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.volunteer-opportunity:hover .icon-box {
+    background-color: var(--accent-color);
+}
+
+.volunteer-opportunity .icon-box i {
+    font-size: 32px;
+    color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.volunteer-opportunity:hover .icon-box i {
+    color: var(--white-color);
+}
+
+.volunteer-opportunity h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.volunteer-opportunity p {
+    margin-bottom: 20px;
+}
+
+.time-commitment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.time-commitment i {
+    margin-right: 6px;
+}
+
+.btn-default.btn-sm {
+    font-size: 14px;
+    padding: 8px 50px 8px 15px;
+}
+
+.volunteer-cta {
+    background-color: var(--white-color);
+    border-radius: 0 0 50px 0;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.volunteer-cta h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.volunteer-cta p {
+    margin-bottom: 20px;
+}
+
+/************************************/
+/***     Virtual Tour             ***/
+/************************************/
+
+.virtual-tour {
+    padding: 80px 0;
+    background-color: var(--white-color);
+}
+
+.tour-container {
+    border-radius: 0 0 80px 0;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/************************************/
+/***     Interactive Deities      ***/
+/************************************/
+
+.interactive-deities {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.deity-interactive-map {
+    position: relative;
+    background-color: var(--white-color);
+    border-radius: 0 0 50px 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.temple-layout {
+    position: relative;
+    border-radius: 0 0 30px 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.temple-layout-img {
+    width: 100%;
+    border-radius: 0 0 30px 0;
+}
+
+.deity-marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.marker-dot {
+    width: 16px;
+    height: 16px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.marker-pulse {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(254, 96, 53, 0.4);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+.deity-info-panel {
+    background-color: var(--secondary-color);
+    border-radius: 0 0 30px 0;
+    padding: 20px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.deity-info-panel h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.deity-info-panel p {
+    margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 991px) {
+    .info-box,
+    .stat-item,
+    .service-pricing-table,
+    .calendar-wrapper,
+    .location-details,
+    .give-box,
+    .give-benefits,
+    .livestream-container,
+    .volunteer-opportunity,
+    .volunteer-cta,
+    .deity-interactive-map {
+        margin-bottom: 30px;
+    }
+    
+    .festival-date {
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+    }
+    
+    .location-btn {
+        margin-top: 20px;
+    }
+    
+    .map-container {
+        min-height: 350px;
+    }
+    
+    .benefit-list li {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .visiting-info,
+    .temple-statistics,
+    .prayer-services,
+    .festival-calendar,
+    .temple-location,
+    .livestream-section,
+    .volunteer-section,
+    .virtual-tour,
+    .interactive-deities {
+        padding: 50px 0;
+    }
+    
+    .info-box,
+    .service-pricing-table,
+    .location-details,
+    .give-box,
+    .give-benefits,
+    .livestream-container,
+    .volunteer-opportunity,
+    .volunteer-cta {
+        padding: 20px;
+    }
+    
+    .stat-item h2 {
+        font-size: 36px;
+    }
+    
+    .calendar-wrapper,
+    .deity-interactive-map {
+        padding: 20px;
+    }
+    
+    .calendar-nav h3 {
+        font-size: 20px;
+    }
+    
+    .festival-date {
+        margin-right: 15px;
+    }
+    
+    .festival-details h4 {
+        font-size: 16px;
+    }
+    
+    .map-container {
+        min-height: 300px;
+    }
+    
+    .livestream-schedule {
+        padding: 20px;
+    }
+    
+    .livestream-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .volunteer-opportunity h3 {
+        font-size: 20px;
+    }
+    
+    .volunteer-cta h3 {
+        font-size: 22px;
+    }
 }
